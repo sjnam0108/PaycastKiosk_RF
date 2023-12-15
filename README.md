@@ -5,4 +5,4 @@
 - clean architecture
 - mvvm 
 ### 🔎 참조 
-- [PayCast demo](http://s.paycast.co.kr/pay/store)
+- [PayCast 관리자페이지](http://s.paycast.co.kr/pay/store)
