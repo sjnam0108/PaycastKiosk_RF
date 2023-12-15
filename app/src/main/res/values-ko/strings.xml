@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name"  >PayCast</string>
+
+    <string name="msg_card_payment"  >결제 해주세요.</string>
+    <string name="msg_card_insert"  >신용카드를 투입구에 끝까지 넣어 주세요.</string>
+    <string name="msg_back_page"  >이전화면</string>
+    <string name="msg_complete_payment"  >결제가 완료되었습니다.</string>
+    <string name="msg_paying_card"  >결제 처리 중...</string>
+    <string name="msg_payment_amount"   >결제금액은 %1$,d원 입니다.</string>
+    <string name="msg_guid_order_number"   >고객님의 주문번호는 %1$,d번 입니다.</string>
+    <string name="msg_guid_receipt"   >영수증이 출력됩니다.</string>
+    <string name="msg_guid_card_out"   >신용카드를 가져가세요.</string>
+
+    <string name="Log_get_menu_info_server"   >서버로 부터 메뉴 변경 정보 획득</string>
+    <string name="Log_result_get_menu_info_server">서버로부터 메뉴 변경 정보 획득 결과</string>
+    <string name="str_noti_menu_info_title"  >메뉴 정보</string>
+    <string name="str_noti_menu_update_msg"  >메뉴 정보 업데이트 중입니다.\n 업데이트 후 사용하여 주시기 바랍니다.</string>
+
+
+    <string name="str_cancel"  >취소</string>
+    <string name="str_confirm"  >확인</string>
+
+    <string name="str_not_install_cardmodule"  >카드 모듈 미설치</string>
+    <string name="str_error_card_module"  >카드 모듈 오류</string>
+    <string name="str_error_rf_module"  >RF 모듈 오류</string>
+    <string name="str_not_setting_connect_van_server"  >VAN 서버연결 미설정</string>
+    <string name="str_fail_connect_van_server"  >VAN 서버 연결 실패</string>
+    <string name="str_not_setting_interlock_server"  >연동 서버연결 미설정</string>
+    <string name="str_fail_connect_interlock_server"  >연동 서버 연결 실패</string>
+
+    <string name="str_refill_receipt_paper"  >영수증 용지를 교체해주세요.</string>
+    <string name="str_open_printer_cover"  >프린터 덥개를 닫아주세요.</string>
+
+    <string name="str_check_printer_status"  >프린터 상태 확인해 주세요.</string>
+    <string name="str_order_cancel"  >취소요청</string>
+    <string name="str_lock_code"  >비밀번호</string>
+    <string name="str_change_lock_code"  >비밀번호 변경</string>
+    <string name="str_re_lock_code"  >재입력 비밀번호</string>
+    <string name="str_not_match_new_lock_code"  >새 비밀번호가 일치하지 않습니다.</string>
+    <string name="str_server_host_setting"  >서버 설정</string>
+    <string name="str_waiting_count"  >대기자 수 %1$,d</string>
+    <string name="str_quit_app"  >종료</string>
+    <string name="str_order_number"  >주문번호</string>
+    <string name="str_payment_date"  >결제일자</string>
+    <string name="str_payment_money"  >결제금액</string>
+    <string name="str_approval_number"  >승인번호</string>
+    <string name="str_cancel_order_confirm"  >주문을 취소하시겠습니까?</string>
+    <string name="str_close_dialog"  >닫기</string>
+    <string name="str_closing_settlement_app"  >마감정산</string>
+    <string name="str_paycastdid_check_network"  >네트워크 장애가 발생했습니다.</string>
+    <string name="str_paycastdid_network_title"  >네트워크</string>
+    <string name="str_paycastdid_strength_network"  >네트워크 장애가 발생했습니다.</string>
+    <string name="paycast_did_network_stability"  >paycast did netwrok stability</string>
+    <string name="paycast_did_network_instability"  >paycast did netwrok instability</string>
+    <string name="str_main_print_setting"  >주방용 프린터 설정</string>
+    <string name="str_main_print_ip"  >주방용 프린터 IP</string>
+    <string name="str_main_print_enable"  >주방용 프린터 마스터 기기 설정</string>
+
+    <string name="str_message_noti_service_title"  >문자알림</string>
+    <string name="str_message_noti_service_body"  >주문하신 메뉴가 준비되면 입력하신 휴대폰 번호로 메시지를 보내드립니다.</string>
+    <string name="str_guide_input_telnumber"  >전화번호를 입력해 주세요.</string>
+    <string name="str_provide_personal_info"  > 개인정보 제3자 제공동의</string>
+    <string name="str_view_details"  >보기</string>
+    <string name="str_skip_button"  >건너뛰기</string>
+    <string name="str_check_telnumber"  >전화번호를 확인하여 주십시요.</string>
+    <string name="str_check_consent_personal_info"  >"개인정보 제3자 제공동의"를 체크해 주세요.</string>
+    <string name="str_providing_agreement_body"  >
+        \n\n회원님으로부터 수집한 개인정보는 "개인정보처리방침"에서 고지한 범위 내에서만 사용하며,
+회원님의 동의 없이는 해당 범위를 초과하여 이용하거나 제3자에게 제공하지 않습니다.\n
+다만, 양질의 서비스제공을 위하여 회원님의 개인정보를 협력업체에게 제공하거나
+공유할 필요가 있는 경우에는 제공 또는 공유할 정보의 항목 및 제공받는 자, 제공목적, 이용 및 보유기간 등을 호원님께 고지하여 동의를 구합니다.\n\n
+제1조(개인정보의 제3자 제공 및 공유)\n
+회사는 회원님의 개인정보를 아래에서 명시한 개인정보의 처리목적 범위 내에서만 처리하며, 회원님의 동의내지 법이 허용한 경우에만 개인정보를 제3자에게 제공합니다.
+회사는 다음과 같이 회원님들의 개인정보를 제3자에게 제공합니다.\n①개인정보를 제공받는 메시지 서비스 업체\n②주문한 서비스 또는 재화의 배송 수신자 성명, 휴대폰번호, 배송주소\n③개인정보 보유 및 이용기간은 서비스 제공 완료 후 6개월
+아래의 경우에는 관련법령의 규정에 의하여 회원님의 동의 없이 개인정보를 제공할 수도 있습니다.\n①이용자가 사전에 공개하거나 또는 제3자 제공에 동의한 경우\n②관계법령의 규정에 의거하거나, 수사목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우
+</string>
+    <string name="str_providing_agreement_title"  >개인정보 제3자 제공동의</string>
+    <string name="str_payment_button"  >결제</string>
+    <string name="str_packing_button"  >        포장</string>
+    <string name="str_total_orders"  >총 주문</string>
+    <string name="str_won"  > 원</string>
+    <string name="str_order_cancellation"  >주문취소</string>
+    <string name="str_order_numm_err_title"  >주문번호</string>
+    <string name="str_order_numm_err_body"  >상점 ID와 기기 ID를 확인하여 주세요.</string>
+    <string name="str_order_numm_server_err_body"  >서버 연결 상태가 좋지 않습니다.</string>
+    <string name="str_receipt_print_won"  >원</string>
+    <string name="str_receipt_print_thank_you"  >이용해 주셔서 감사합니다.</string>
+    <string name="str_receipt_print_card_name"  >카드명</string>
+    <string name="str_receipt_print_card_number"  >카드번호</string>
+    <string name="str_receipt_print_vat"  >부가세</string>
+    <string name="str_receipt_print_merchant_number"  >가맹점번호</string>
+    <string name="str_receipt_print_approval_number"  >승인번호</string>
+    <string name="str_receipt_print_installment_months"  >할부개월</string>
+    <string name="str_receipt_print_lump_sum"  >일시불</string>
+    <string name="str_receipt_print_month"  >개월</string>
+    <string name="str_receipt_print_date_transaction"  >거래일시</string>
+    <string name="str_receipt_print_item"  >품목</string>
+    <string name="str_receipt_print_amount"  >수량</string>
+    <string name="str_receipt_print_supply_price"  >공급가액</string>
+    <string name="str_receipt_print_payment"  >결제금액</string>
+    <string name="str_receipt_print_order_number"  >주문번호</string>
+    <string name="str_receipt_print_date_order"  >주문일시</string>
+    <string name="str_receipt_print_packing"  >포장</string>
+    <string name="str_receipt_print_total_amount"  >총액</string>
+    <string name="str_order_button"  >주문</string>
+    <string name="require_file_access">파일 액세스 권한이 필요 합니다.</string>
+    <string name="confirm_file_access">파일 액세스 권한을 허용해 주세요.</string>
+</resources>

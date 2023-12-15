@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/order_number_id"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="25dp"
+                android:text="@string/str_order_number" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/payment_date_id"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="25dp"
+                android:text="@string/str_payment_date" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/payment_money_id"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="25dp"
+                android:text="@string/str_payment_money" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/approval_number_id"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="25dp"
+                android:text="@string/str_approval_number" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/str_cancel_order_confirm"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/lock_cancel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_item_text_size"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/str_cancel" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/lock_confirm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_item_text_size"
+            android:layout_weight="1"
+            android:background="@color/orange500transparent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+
+</LinearLayout>

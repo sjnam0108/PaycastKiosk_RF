@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fitsSystemWindows="true"
+        android:paddingTop="30dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="15"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/msg_noti_title_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:paddingTop="10dp"
+                    android:text="@string/str_message_noti_service_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/msg_notify_title_size" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/msg_noti_body_id"
+                    android:layout_width="match_parent"
+                    android:layout_weight="4"
+                    android:layout_height="0dp"
+                    android:text="@string/str_message_noti_service_body"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialog_recycler_menu_desciption_font_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:text="@string/str_guide_input_telnumber"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialog_recycler_menu_desciption_font_size" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/edit_telnum_id"
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialog_recycler_menu_desciption_font_size"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:id="@+id/check_provide_info_id"
+                        android:textColor="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="4.2"
+                        android:textSize="@dimen/dialog_recycler_menu_desciption_font_size"
+                        android:buttonTint="@color/white"
+                        android:button="@drawable/selector_white_checkbox"
+                        android:text="@string/str_provide_personal_info"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/guide_provide_info_id"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.8"
+                        android:textSize="@dimen/dialog_recycler_menu_desciption_font_size"
+                        android:background="@drawable/empty_box"
+                        android:text="@string/str_view_details"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <Button
+                    android:id="@+id/skip_btn_id"
+                    android:layout_width="0dp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/empty_box"
+                    android:text="@string/str_skip_button"
+                    android:textStyle="bold"
+                    android:textSize="45dp"/>
+
+                <Button
+                    android:id="@+id/confirm_btn_id"
+                    android:layout_width="0dp"
+                    android:textColor="@color/Yellow"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="45dp"
+                    android:background="@drawable/empty_box"
+                    android:text="@string/str_confirm"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:background="@color/black"
+                android:layout_height="0dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

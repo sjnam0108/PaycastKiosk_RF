@@ -1,0 +1,34 @@
+<SignCast generated="2021/01/13 11:50:40">
+<Option>
+<FtpActiveMode>false</FtpActiveMode>
+<MonitorMins>3</MonitorMins>
+<PlayerStart>true</PlayerStart>
+<Server.FtpHost>demo.paycast.co.kr</Server.FtpHost>
+<Server.FtpPassword>paycastfnd</Server.FtpPassword>
+<Server.FtpPort>21</Server.FtpPort>
+<Server.FtpUser>paycast20190725</Server.FtpUser>
+<Server.ServerHost>s.paycast.co.kr</Server.ServerHost>
+<Server.ServerPort>80</Server.ServerPort>
+<Server.ServerUkid>seocho1434</Server.ServerUkid>
+<Server.StbId>56</Server.StbId>
+<Server.StbName>&#54924;&#51032;&#49892; &#53412;&#50724;&#49828;&#53356;</Server.StbName>
+<Server.StbServiceType>I</Server.StbServiceType>
+<Server.StbUdpPort>11001</Server.StbUdpPort>
+<Server.storeName>Cast Bakery</Server.storeName>
+<Server.storeAddr>&#49436;&#50872; &#49436;&#52488;&#44396;</Server.storeAddr>
+<Server.businessNum>123-123-46-798-65987</Server.businessNum>
+<Server.storeTel>02-553-8615</Server.storeTel>
+<Server.merchantNum></Server.merchantNum>
+<Server.storeCatid></Server.storeCatid>
+<Server.represent>BBMC&#44053;&#45224;</Server.represent>
+<Server.storeId>2</Server.storeId>
+<operatingTime>AM 09:00 ~ PM 06:00</operatingTime>
+<storeIntroduction></storeIntroduction>
+<Server.deviceId>BBMCS998</Server.deviceId>
+<Server.MainPrintEnable>false</Server.MainPrintEnable>
+<Server.MainPrintIp>192.168.0.218</Server.MainPrintIp>
+<koEnabled>true</koEnabled>
+<atEnabled>true</atEnabled>
+<openType>O</openType>
+</Option>
+</SignCast>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="1000dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:padding ="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/closing_set_id"
+                android:clickable="true"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="@string/str_closing_settlement_app" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding ="10dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="@string/str_order_cancel" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding ="10dp"
+                android:textSize="30dp"
+                android:hint="주문 취소번호 4자리를 입력해 주세요."
+                android:inputType="number"
+                android:maxLength="8"
+                android:id="@+id/receipt_num_id"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/LightGray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingBottom="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/option_cancel_id"
+                    android:background="@color/red"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="@string/Hint_Cancel" />
+
+                <Button
+                    android:id="@+id/order_cancel_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange500transparent"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/str_order_cancel" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/agent_setting_id"
+                android:clickable="true"
+                android:padding ="10dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="@string/str_server_host_setting" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:padding ="10dp"
+                android:id="@+id/chg_lock_id"
+                android:clickable="true"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="@string/str_change_lock_code" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/print_setting_id"
+                android:clickable="true"
+                android:padding ="10dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="@string/str_main_print_setting" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/quit_app_id"
+                android:padding ="10dp"
+                android:clickable="true"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="@string/str_quit_app" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

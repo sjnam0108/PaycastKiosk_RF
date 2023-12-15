@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <usb-device
+        class="7"
+        product-id="32777"
+        protocol="0"
+        subclass="0"
+        vendor-id="1155" /> <!-- inner Printer for zalcom 1-->
+    <usb-device
+        class="7"
+        product-id="14862"
+        protocol="2"
+        subclass="1"
+        vendor-id="7306" /> <!-- Printer 1-->
+    <usb-device
+        class="7"
+        product-id="42752"
+        protocol="2"
+        subclass="1"
+        vendor-id="1317" /> <!-- POS Printer -->
+    <usb-device
+        class="7"
+        product-id="42754"
+        protocol="2"
+        subclass="1"
+        vendor-id="1317" /> <!-- Mobile Printer -->
+    <usb-device vendor-id="19267" product-id="13624"/>    <!-- zalcom Printer -->
+    <usb-device vendor-id="19267" product-id="17219"/>    <!-- zalcom Printer -->
+    <usb-device vendor-id="1659" product-id="8963"/>    <!-- zalcom Printer -->
+    <usb-device vendor-id="4070" product-id="33054"/>
+    <usb-device vendor-id="1155" product-id="32777"/>  <!-- zalcom Printer -->
+
+</resources>

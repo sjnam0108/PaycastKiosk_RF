@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/paper00" android:duration="80"/>
+    <item android:drawable="@drawable/paper01" android:duration="80"/>
+    <item android:drawable="@drawable/paper02" android:duration="80"/>
+    <item android:drawable="@drawable/paper03" android:duration="80"/>
+    <item android:drawable="@drawable/paper04" android:duration="80"/>
+    <item android:drawable="@drawable/paper05" android:duration="80"/>
+    <item android:drawable="@drawable/paper06" android:duration="80"/>
+    <item android:drawable="@drawable/paper07" android:duration="80"/>
+    <item android:drawable="@drawable/paper08" android:duration="80"/>
+    <item android:drawable="@drawable/paper09" android:duration="80"/>
+    <item android:drawable="@drawable/paper10" android:duration="80"/>
+    <item android:drawable="@drawable/paper11" android:duration="80"/>
+    <item android:drawable="@drawable/paper12" android:duration="80"/>
+    <item android:drawable="@drawable/paper13" android:duration="80"/>
+    <item android:drawable="@drawable/paper14" android:duration="80"/>
+    <item android:drawable="@drawable/paper15" android:duration="80"/>
+    <item android:drawable="@drawable/paper16" android:duration="80"/>
+    <item android:drawable="@drawable/paper17" android:duration="80"/>
+    <item android:drawable="@drawable/paper18" android:duration="80"/>
+    <item android:drawable="@drawable/paper19" android:duration="80"/>
+    <item android:drawable="@drawable/paper20" android:duration="80"/>
+    <item android:drawable="@drawable/paper21" android:duration="80"/>
+    <item android:drawable="@drawable/paper22" android:duration="80"/>
+    <item android:drawable="@drawable/paper23" android:duration="80"/>
+</animation-list>

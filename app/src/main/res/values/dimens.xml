@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="menu_horizontal_height">300dp</dimen>
+    <dimen name="menu_horizontal_width">300dp</dimen>
+
+    <dimen name="dialog_fixed_width_major">200dp</dimen>
+    <dimen name="dialog_fixed_width_minor">300dp</dimen>
+    <dimen name="dialog_fixed_height_major">1000dp</dimen>
+    <dimen name="dialog_fixed_height_minor">900dp</dimen>
+
+    <dimen name="dialog_recycler_menu_desciption_font_size">45dp</dimen>
+    <dimen name="msg_notify_title_size">75dp</dimen>
+
+</resources>

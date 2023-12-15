@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/card00" android:duration="80"/>
+    <item android:drawable="@drawable/card01" android:duration="80"/>
+    <item android:drawable="@drawable/card02" android:duration="80"/>
+    <item android:drawable="@drawable/card03" android:duration="80"/>
+    <item android:drawable="@drawable/card04" android:duration="80"/>
+    <item android:drawable="@drawable/card05" android:duration="80"/>
+    <item android:drawable="@drawable/card06" android:duration="80"/>
+    <item android:drawable="@drawable/card07" android:duration="80"/>
+    <item android:drawable="@drawable/card08" android:duration="80"/>
+    <item android:drawable="@drawable/card09" android:duration="80"/>
+    <item android:drawable="@drawable/card10" android:duration="80"/>
+    <item android:drawable="@drawable/card11" android:duration="80"/>
+    <item android:drawable="@drawable/card12" android:duration="80"/>
+    <item android:drawable="@drawable/card13" android:duration="80"/>
+    <item android:drawable="@drawable/card14" android:duration="80"/>
+    <item android:drawable="@drawable/card15" android:duration="80"/>
+    <item android:drawable="@drawable/card16" android:duration="80"/>
+    <item android:drawable="@drawable/card17" android:duration="80"/>
+    <item android:drawable="@drawable/card18" android:duration="80"/>
+    <item android:drawable="@drawable/card19" android:duration="80"/>
+    <item android:drawable="@drawable/card20" android:duration="80"/>
+    <item android:drawable="@drawable/card21" android:duration="80"/>
+    <item android:drawable="@drawable/card22" android:duration="80"/>
+    <item android:drawable="@drawable/card23" android:duration="80"/>
+    <item android:drawable="@drawable/card24" android:duration="80"/>
+</animation-list>

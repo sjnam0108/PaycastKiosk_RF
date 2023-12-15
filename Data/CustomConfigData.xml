@@ -1,0 +1,12 @@
+<SignCast generated="2018/11/27 19:23:36">
+<Configuration>
+<ServerSSLEnabled>false</ServerSSLEnabled>
+<ScreenAnalysisMins>0</ScreenAnalysisMins>
+<UpdateFTPServerURL>211.115.93.64</UpdateFTPServerURL>
+<BackgroundImgFile>&lt;script&gt;alert('11')&lt;/script&gt;</BackgroundImgFile>
+<UpdateInfoURL>https://test.signcast.co.kr:8080/SignCastUpdate.xml</UpdateInfoURL>
+<PlayerRestartThresholdPct>0</PlayerRestartThresholdPct>
+<FTPSEnabled>flase</FTPSEnabled>
+<Edition />
+</Configuration>
+</SignCast>

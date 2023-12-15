@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="@string/str_lock_code" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:hint="비밀번호 4자리를 입력해 주세요."
+                android:inputType="textPassword"
+                android:maxLength="4"
+                android:id="@+id/lockcode_num1_id"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/lock_confirm_id"
+            android:layout_width="wrap_content"
+            android:background="@color/orange500transparent"
+            android:layout_height="@dimen/edit_item_text_size"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/str_confirm" />
+        <Button
+            android:id="@+id/lock_cancel_id"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/orange500transparent"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/edit_item_text_size"
+            android:layout_weight="1"
+            android:text="@string/str_cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

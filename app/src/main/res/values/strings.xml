@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name" translatable="false">PayCast</string>
+
+    <string name="msg_card_payment">Please pay.</string>
+    <string name="msg_card_insert">Please put your credit card in the input port until the end.</string>
+    <string name="msg_back_page">Previous screen</string>
+    <string name="msg_complete_payment">Payment is complete.</string>
+    <string name="msg_paying_card">Processing payment...</string>
+    <string name="msg_payment_amount">Payment amount is %1$,d won.</string>
+    <string name="msg_guid_order_number">Your order number is %1$,d.</string>
+    <string name="msg_guid_receipt">The receipt is printed.</string>
+    <string name="msg_guid_card_out">Take your credit card.</string>
+
+    <string name="Log_get_menu_info_server"  translatable="false">서버로 부터 메뉴 변경 정보 획득</string>
+    <string name="Log_result_get_menu_info_server">서버로부터 메뉴 변경 정보 획득 결과</string>
+    <string name="str_noti_menu_info_title" >Menu Information</string>
+    <string name="str_noti_menu_update_msg" >Updating menu information.\n Please use it after updating.</string>
+
+
+    <string name="str_cancel" translatable="false">Cancel</string>
+    <string name="str_confirm" translatable="false">OK</string>
+
+    <string name="str_not_install_cardmodule" >Card module not installed.</string>
+    <string name="str_error_card_module" >Card module error</string>
+    <string name="str_error_rf_module" >RF module error</string>
+    <string name="str_not_setting_connect_van_server" >VAN server connection not set up.</string>
+    <string name="str_fail_connect_van_server" >VAN server connection failure.</string>
+    <string name="str_not_setting_interlock_server" >Unable to establish interworking server connection.</string>
+    <string name="str_fail_connect_interlock_server" >Interworking server connection failed.</string>
+
+    <string name="str_refill_receipt_paper" >Please replace receipt paper.</string>
+    <string name="str_open_printer_cover" >Please close the printer cover.</string>
+
+    <string name="str_check_printer_status">Please check the printer status.</string>
+    <string name="str_order_cancel" >Cancellation request</string>
+    <string name="str_lock_code" >password</string>
+    <string name="str_change_lock_code" >Change Password</string>
+    <string name="str_re_lock_code" >Re-enter password</string>
+    <string name="str_not_match_new_lock_code" >The new password does not match.</string>
+    <string name="str_server_host_setting" >Server settings</string>
+    <string name="str_waiting_count" >Number of waiters %1$,d</string>
+    <string name="str_quit_app">End</string>
+    <string name="str_order_number" >Order Number</string>
+    <string name="str_payment_date" >Payment Date</string>
+    <string name="str_payment_money" >Payment</string>
+    <string name="str_approval_number" >Approval number</string>
+    <string name="str_cancel_order_confirm" >Are you sure you want to cancel your order?</string>
+    <string name="str_close_dialog" >close</string>
+    <string name="str_closing_settlement_app" >Closing settlement</string>
+    <string name="str_paycastdid_check_network" >A network failure has occurred.</string>
+    <string name="str_paycastdid_network_title" >network</string>
+    <string name="str_paycastdid_strength_network">A network failure has occurred.</string>
+    <string name="paycast_did_network_stability" >paycast did netwrok stability</string>
+    <string name="paycast_did_network_instability">paycast did netwrok instability</string>
+    <string name="str_main_print_setting" >Setting up a kitchen printer</string>
+    <string name="str_main_print_ip">Kitchen Printer IP</string>
+    <string name="str_main_print_enable" >Setting the master printer for the kitchen.</string>
+
+    <string name="str_message_noti_service_title" >Message notification</string>
+    <string name="str_message_noti_service_body" >When the menu you ordered is ready, we will send a message to your mobile number.</string>
+    <string name="str_guide_input_telnumber" >Please enter your phone number.</string>
+    <string name="str_provide_personal_info" > Personal information Third party provision agreement</string>
+    <string name="str_view_details" >Details</string>
+    <string name="str_skip_button" >Skip</string>
+    <string name="str_check_telnumber" >Please check your phone number.</string>
+    <string name="str_check_consent_personal_info" >Please check the third party consent for personal information.</string>
+    <string name="str_providing_agreement_body" >
+        \n\nThe personal information collected from you is used only within the scope of the notice stated in the "Personal Information Processing Policy" Without your consent, we will not use it beyond its scope or provide it to any third party.\n
+However, in order to provide high-quality service, we provide your personal information to If you need to share, you agree to inform us of the items of information to be provided or shared and the recipients, purpose of use, use and retention period.\n\n
+Article 1 (Providing and sharing personal information with third parties)\n
+The Company treats your personal information only within the scope of the processing of the personal information described below, and only provides your personal information to third parties if your consent or law permits.
+The Company will provide your personal information to third parties as follows:\n①Message service provider that receives personal information\n
+        ②주문한 서비스 또는 재화의 배송 수신자 성명, 휴대폰번호, 배송주소\n③The period of personal information retention and usage period is six months In the following cases, personal information may be provided without the consent of the user under the provisions of relevant laws and regulations.\n
+        ①If the user discloses in advance or agrees to provide the third party\n
+        ②In accordance with the provisions of the relevant laws and regulations, or in cases where there is a request from the investigating agency in accordance with procedures and methods prescribed in the Act for the purpose of investigation
+</string>
+    <string name="str_providing_agreement_title" >Personal information third party consent</string>
+    <string name="str_payment_button"  >PAY</string>
+    <string name="str_packing_button"  >Packing</string>
+    <string name="str_total_orders"  >Orders</string>
+    <string name="str_won"  > ₩</string>
+    <string name="str_order_cancellation"  >CANCEL</string>
+    <string name="kiosk_disenable_command" translatable="false" >Kiosk Enable command</string>
+    <string name="kiosk_menu_update_command" translatable="false" >Kiosk menu update command</string>
+    <string name="kiosk_banner_update_command" translatable="false" >kiosk banner update command</string>
+    <string name="str_order_numm_err_title"  >Order number</string>
+    <string name="str_order_numm_err_body"  >Please check your store ID and device ID.</string>
+    <string name="str_order_numm_server_err_body"  >Server connection is bad.</string>
+    <string name="str_receipt_print_won"  >won</string>
+    <string name="str_receipt_print_thank_you"  >Thank you for using.</string>
+    <string name="str_receipt_print_card_name"  >Card name</string>
+    <string name="str_receipt_print_card_number"  >Card number</string>
+    <string name="str_receipt_print_vat"  >VAT</string>
+    <string name="str_receipt_print_merchant_number"  >Merchant No.</string>
+    <string name="str_receipt_print_approval_number"  >Approval No.</string>
+    <string name="str_receipt_print_installment_months"  >Installment months</string>
+    <string name="str_receipt_print_lump_sum"  >Lump sum</string>
+    <string name="str_receipt_print_month"  >month</string>
+    <string name="str_receipt_print_date_transaction"  >Date of transaction</string>
+    <string name="str_receipt_print_item"  >item</string>
+    <string name="str_receipt_print_amount"  >amount</string>
+    <string name="str_receipt_print_supply_price"  >Supply Price</string>
+    <string name="str_receipt_print_payment"  >Tot Payment</string>
+    <string name="str_receipt_print_order_number"  >Order No.</string>
+    <string name="str_receipt_print_date_order"  >Order Date</string>
+    <string name="str_receipt_print_packing"  >packing</string>
+    <string name="str_receipt_print_total_amount"  >Total</string>
+    <string name="kiosk_menu_update_end_command" translatable="false" >Kiosk menu update end</string>
+    <string name="kiosk_opentype_update_command" translatable="false" >Kiosk openType update</string>
+    <string name="paycast_agent_file_update" translatable="false">paycas agent file update</string>
+    <string name="str_order_button"  >Order</string>
+    <string name="require_file_access">Requires file access permission</string>
+    <string name="confirm_file_access">Please allow access to the file storage</string>
+    <string name="err_xml_parsing" translatable="false">XML is invalid.</string>
+</resources>

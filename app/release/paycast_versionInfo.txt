@@ -1,0 +1,26 @@
+Version : paycast_r1_4_22
+1. openType=“O” : 영업여부 추가
+2. 기본 사이트 설정: m.paycast.co.kr 로 변경
+3. 결제 정보 내부에 log 로 남기도록 수정
+   => 카드 결제가 된 이후에 앱이 중지되는 현상이 발생 시에 사후 처리 시에 필요.
+
+Version : paycast_r1_4_23
+1. 주문한 메뉴명 20자 이상의 경우 프린트가 제대로 안되는 현상 수정
+
+version : paycast_r1_4_24
+1. network 함수 변경
+2. 랜선 연결된 상태에서 통신이 안되는 경우 중지팝업 발생하는 현상 수정
+
+Version : paycast_r_su1_4_25
+1. 잘컴 android 7.1.2 에서 layout 비율로 디스플레이 되도록 되어 있는 부분이 제대로 동작하지 않아
+   디스플레이 크기 하드코딩 됨.(21인치, 잘컴 android 7.1.2 전용버전.)
+2. 옵션 메뉴 리스트가 긴 경우 일부만 display 되는 현상 수정
+   (21인치, 잘컴 android 7.1.2 전용버전.)
+
+Version : paycast_r1_4_26
+1. 서버정보 수정하는 다이어로그에서 상점id(Ukid) 수정하는 로직 추가. (원래는 접속테스트를 해야만 저장이 됐었음)
+
+Version : paycast_r1_4_27
+1. 'custom_add_option_menu_layout.xml' 의 'main_menu_description_id' 부분이 짤리는 현상
+   해당 레이아웃의 weight 조절하여 수정함.
+   maxLines='3' 으로 설정하여 3줄까지만 표현되게 수정.

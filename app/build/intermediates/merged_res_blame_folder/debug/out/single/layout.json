@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/srv_setting_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/srv_setting_layout.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/setting_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/setting_layout.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/info_providing_agreement_dialog_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/info_providing_agreement_dialog_layout.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/custom_cancel_order_dialog.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/custom_cancel_order_dialog.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/custom_new_lock_dialog.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/custom_new_lock_dialog.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/activity_paymentkicc.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/activity_paymentkicc.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/activity_provision_info_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/activity_provision_info_layout.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/print_setting_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/print_setting_layout.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/custom_lock_dialog.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/custom_lock_dialog.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/menu_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/menu_layout.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/activity_payment.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/activity_payment.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/custom_dialog.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/indicator_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/indicator_layout.xml"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-mergeDebugResources-78:/layout/agent_setting_layout.xml",
+        "source": "kr.co.bbmc.paycast.app-main-81:/layout/agent_setting_layout.xml"
+    }
+]

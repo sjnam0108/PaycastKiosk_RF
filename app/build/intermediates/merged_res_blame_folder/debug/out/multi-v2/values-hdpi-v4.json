@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "kr.co.bbmc.paycast.app-mergeDebugResources-77:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HHH\\.gradle\\caches\\transforms-3\\1fbee0c2a49dfc8fec41a928cdbb6c4b\\transformed\\appcompat-1.7.0-alpha02\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

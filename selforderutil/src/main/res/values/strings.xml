@@ -1,0 +1,157 @@
+<resources>
+
+    <string name="app_name">PayCast</string>
+    <string name="server">Server</string>
+    <string name="ftpActiveMode">FtpActiveMode</string>
+    <string name="monitorMins">MonitorMins</string>
+    <string name="playerStart">PlayerStart</string>
+
+
+    <string name="ftpHost">ftphost</string>
+    <string name="ftpPassword">ftppassword</string>
+    <string name="ftpPort">ftpport</string>
+    <string name="ftpUser">ftpuser</string>
+    <string name="serverHost">serverhost</string>
+    <string name="serverPort">serverport</string>
+    <string name="serverUkid">serverukid</string>
+    <string name="stbId">stbid</string>
+    <string name="stbName">stbname</string>
+    <string name="stbServiceType">stbservicetype</string>
+    <string name="stbUdpPort">stbudpport</string>
+
+    <string name="serverftpHost">Server.FtpHost</string>
+    <string name="serverftpPassword">Server.FtpPassword</string>
+    <string name="serverftpPort">Server.FtpPort</string>
+    <string name="serverftpUser">Server.FtpUser</string>
+    <string name="serverserverHost">Server.ServerHost</string>
+    <string name="serverserverPort">Server.ServerPort</string>
+    <string name="serverserverUkid">Server.ServerUkid</string>
+    <string name="serverstbId">Server.StbId</string>
+    <string name="serverstbName">Server.StbName</string>
+    <string name="serverstbServiceType">Server.StbServiceType</string>
+    <string name="serverstbUdpPort">Server.StbUdpPort</string>
+
+    <string name="items">Items</string>
+    <string name="item">Item</string>
+    <string name="foldername">foldername</string>
+    <string name="filename">filename</string>
+    <string name="filelength">filelength</string>
+    <string name="stbfileid">stbfileid</string>
+    <string name="kfileid">kfileid</string>
+    <string name="kroot">kroot</string>
+    <string name="playatonce">playatonce</string>
+
+
+    /*  PlayerOptData  */
+    <string name="playerLang">Lang</string>
+    <string name="playerRegion">Region</string>
+    <string name="playerGuidImgFile">SlideShow.GuideImageFile</string>
+    <string name="playerPptViewFile">SlideShow.PptViewerFile</string>
+    <string name="playerScheduleFile">SlideShow.ScheduleFile</string>
+    <string name="playerStoreMenuFile">SlideShow.StoreMenuFile</string>
+    <string name="playerConnectionCheck">SlideShow.ConnectionCheck</string>
+    <string name="playervConnectionErrorDisplayed">SlideShow.ConnectionErrorDisplayed</string>
+    <string name="playerCustomExec">SlideShow.CustomExec</string>
+    <string name="playerCustomArgs">SlideShow.CustomArgs</string>
+    <string name="playerSleepSecs">SlideShow.SleepSecs</string>
+    <string name="playerKioskStartOnPlayerStartUp">SlideShow.KioskStartOnPlayerStartUp</string>
+    <string name="playerKioskAutoStartSecs">SlideShow.KioskAutoStartSecs</string>
+    <string name="playerAfterClosingAction">SlideShow.AfterClosingAction</string>
+    <string name="playerClosingDelaySecs">SlideShow.ClosingDelaySecs</string>
+    <string name="playerMonitorAction">SlideShow.MonitorAction</string>
+    <string name="playerRestartHours">SlideShow.RestartHours</string>
+    <string name="playerScreenExtMode">SlideShow.ScreenExtMode</string>
+    <string name="playerTestNoticeDisplayed">SlideShow.TestNoticeDisplayed</string>
+    <string name="playerTestNoticeText">SlideShow.TestNoticeText</string>
+    <string name="playerTopmostDisplayed">SlideShow.TopmostDisplayed</string>
+    <string name="playerTimeSyncRequired">SlideShow.TimeSyncRequired</string>
+    <string name="playerAllSchedulePlayMode">SlideShow.AllSchedulePlayMode</string>
+    <string name="playerWebBrowserFile">SlideShow.WebBrowserFile</string>
+    <string name="playerSimpleClockDisplayed">SlideShow.SimpleClockDisplayed</string>
+    <string name="playerSimpleClockDisplayedOnlyOntheHour">SlideShow.SimpleClockDisplayedOnlyOntheHour</string>
+    <string name="playerSlideProgressBarDisplayed">SlideShow.SlideProgressBarDisplayed</string>
+    <string name="playerSlideProgressBarColor">SlideShow.SlideProgressBarColor</string>
+    <string name="playerOperationInfoDebugged">SlideShow.OperationInfoDebugged</string>
+    <string name="playerTouchInfoLogged">SlideShow.TouchInfoLogged</string>
+    <string name="playerDefaultFadeApplied">SlideShow.DefaultFadeApplied</string>
+    <string name="playerDefaultFadeTimeType">SlideShow.DefaultFadeTimeType</string>
+    <string name="playerTransparentBGApplied">SlideShow.TransparentBGApplied</string>
+    <string name="playerDisplayAfterDuration">SlideShow.DisplayAfterDuration</string>
+    <string name="playerRoutineSchedPrefix">SlideShow.RoutineSchedPrefix</string>
+    <string name="playerAutoDelSchedDays">SlideShow.AutoDelSchedDays</string>
+    <string name="playerMonBegin">Playtime.MonBeginTime</string>
+    <string name="playerMonEnd">Playtime.MonEndTime</string>
+    <string name="playerTueBegin">Playtime.TueBeginTime</string>
+    <string name="playerTueEnd">Playtime.TueEndTime</string>
+    <string name="playerWedBegin">Playtime.WedBeginTime</string>
+    <string name="playerWedEnd">Playtime.WedEndTime</string>
+    <string name="playerThuBegin">Playtime.ThuBeginTime</string>
+    <string name="playerThuEnd">Playtime.ThuEndTime</string>
+    <string name="playerFriBegin">Playtime.FriBeginTime</string>
+    <string name="playerFriEnd">Playtime.FriEndTime</string>
+    <string name="playerSatBegin">Playtime.SatBeginTime</string>
+    <string name="playerSatEnd">Playtime.SatEndTime</string>
+    <string name="playerSunBegin">Playtime.SunBeginTime</string>
+    <string name="playerSunEnd">Playtime.SunEndTime</string>
+    <string name="playerTcpPort">Communication.ManagerTcpPort</string>
+    <string name="playerUdpport">Communication.StbUdpPort</string>
+    <string name="weatherCity">Weather.City</string>
+    <string name="weatherDisp">Weather.Display</string>
+    <string name="weatherUnit">Weather.Unit</string>
+    <string name="weatherApiKey">Weather.ApiKey</string>
+    <string name="playerDebugDueTime">Temp.DebugDueTime</string>
+    <string name="playerVolume">Volume</string>
+    <string name="player_order_num_init">OrderNum.initValue</string>
+
+    /*  요일  */
+    <string name="monDay">Mon</string>
+    <string name="tueDay">Tue</string>
+    <string name="wedDay">Wed</string>
+    <string name="thuDay">Thu</string>
+    <string name="friDay">Fri</string>
+    <string name="satDay">Sat</string>
+    <string name="sunDay">Sun</string>
+
+    /* CustomConfigData.xml */
+    <string name="serverSSLEnabled">ServerSSLEnabled</string>
+    <string name="updateFTPServerURL">UpdateFTPServerURL</string>
+    <string name="updateInfoURL">UpdateInfoURL</string>
+    <string name="editionCode">EE</string>
+    <string name="editionProperties" translatable="false">EditionProperties</string>
+
+
+    /* LOG MSG */
+    <string name="Hint_Cancel">Cancel</string>
+    <string name="Hint_Save">Save</string>
+    <string name="Hint_Server">Server</string>
+    <string name="Log_CmdAdditionalCommand">Additional Command</string>
+  <string name="Log_CmdCommandName">Command Name</string>
+    <string name="Log_CmdExecTime">Execution Time</string>
+    <string name="Log_CmdParameter">Parameter</string>
+    <string name="Log_CmdTotalCommandCount">Total Command Count</string>
+
+    <string name="properties_tag" translatable="false">Properties</string>
+
+    <string name="server_store_name"  translatable="false">Server.storeName</string>
+    <string name="server_store_addr"  translatable="false">Server.storeAddr</string>
+    <string name="server_business_num"  translatable="false">Server.businessNum</string>
+    <string name="server_store_tel"  translatable="false">Server.storeTel</string>
+    <string name="server_merchant_num"  translatable="false">Server.merchantNum</string>
+    <string name="server_store_catid"  translatable="false">Server.storeCatid</string>
+    <string name="server_represent"  translatable="false">Server.represent</string>
+    <string name="server_store_id"  translatable="false">Server.storeId</string>
+    <string name="main_print_enable"  translatable="false">Server.MainPrintEnable</string>
+    <string name="main_print_ip"  translatable="false">Server.MainPrintIp</string>
+    <string name="ko_enabled"  translatable="false">koEnabled</string>
+    <string name="at_enabled"  translatable="false">atEnabled</string>
+    <string name="openType"  translatable="false">openType</string>
+
+    <string name="option_card_server"  translatable="false">Communication.cardServer</string>
+    <string name="option_card_port"  translatable="false">Communication.cardport</string>
+
+    <string name="store_operating_time" translatable="false">operatingTime</string>
+    <string name="store_introduction_msg" translatable="false">storeIntroduction</string>
+    <string name="server_device_id"  translatable="false">Server.deviceId</string>
+
+
+</resources>
