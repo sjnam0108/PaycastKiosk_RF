@@ -262,6 +262,7 @@ class MainMenuViewModel : BaseViewModel() {
 
     fun setItemPackage(checked: Boolean) {
         Logger.w("setItemPackage = $checked")
+        if(selectedOrderGroup.value.isNullOrEmpty()) { sendToast("상품을 먼저 선택해 주세요"); return }
         _isPackage.value = checked
         _selectedOrders.mutation {
             it.value?.forEach { item -> item.isPackage = checked }
