@@ -22,6 +22,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kr.co.bbmc.paycast.R
+import kr.co.bbmc.paycast.ui.component.papa_red
 
 @Preview(widthDp = 1080, heightDp = 1920)
 @Composable
@@ -33,7 +34,7 @@ fun PaymentActivity() {
 
     Column(
         modifier = Modifier
-            .background(Color.Black)
+            .background(Color.White)
             .padding(50.dp), horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(
@@ -47,12 +48,12 @@ fun PaymentActivity() {
         Text(
             text = stringResource(id = R.string.msg_card_payment),
             fontSize = 40.sp,
-            color = Color.White
+            color = Color.Black
         )
         Text(
             text = stringResource(id = R.string.msg_card_insert),
             fontSize = 40.sp,
-            color = colorResource(id = R.color.Orange),
+            color = papa_red,
             modifier = Modifier
                 .padding(bottom = 40.dp)
         )
@@ -65,7 +66,7 @@ fun PaymentActivity() {
             Text(
                 text = formattedText,
                 fontSize = 40.sp,
-                color = Color.White
+                color = Color.Black
             )
         }
         Column(

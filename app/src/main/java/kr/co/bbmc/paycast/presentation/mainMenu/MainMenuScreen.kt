@@ -18,8 +18,11 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.draw.scale
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
@@ -72,7 +75,7 @@ fun MainMenuScreen(vm: MainMenuViewModel) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color.Black)
+            .background(color = Color.White)
     ) {
         if (showDialog) {
             with(dlgInfo) {
@@ -139,15 +142,22 @@ fun OptionDialog(
         Box(
             modifier = Modifier
                 .padding(40.dp)
-                .background(Color.White)
+                .background(Color.Transparent)
+                .blur(50.dp)
                 .fillMaxSize()
                 .clickable { }
         ) {
             Column(
                 modifier = Modifier
                     .padding(20.dp)
-                    .background(Color.Black)
+                    .background(Color.White, shape = RoundedCornerShape(10.dp))
+                    .border(
+                        width = (1.5).dp,
+                        color = papa_darkgray,
+                        shape = RoundedCornerShape(10.dp)
+                    )
                     .fillMaxSize()
+
             ) {
                 Column(
                     modifier = Modifier
@@ -158,9 +168,9 @@ fun OptionDialog(
                     Text(
                         text = options?.name.toString(),
                         fontSize = 65.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         modifier = Modifier
-                            .padding(12.dp)
+                            .padding(start = 12.dp, end = 12.dp, top = 40.dp)
                             .fillMaxWidth(),
                         textAlign = TextAlign.Center
                     )
@@ -172,7 +182,7 @@ fun OptionDialog(
                         ),
                         contentDescription = null,
                         modifier = Modifier
-                            .padding(12.dp)
+                            .padding(start = 12.dp, end = 12.dp, top = 30.dp)
                             .padding(horizontal = 80.dp)
                             .height(400.dp)
                             .fillMaxWidth(),
@@ -182,16 +192,16 @@ fun OptionDialog(
                     Text(
                         text = options.description,
                         fontSize = 45.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         modifier = Modifier
-                            .padding(24.dp)
+                            .padding(start = 24.dp, end = 24.dp, top = 5.dp)
                             .fillMaxWidth()
                     )
                     val price = options.price
                     Text(
                         text = "${getDecimalFormat(price.toInt())} 원",
                         fontSize = 55.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         modifier = Modifier
                             .padding(24.dp)
                             .fillMaxWidth(),
@@ -215,9 +225,9 @@ fun OptionDialog(
                                     Text(
                                         text = it.menuOptName,
                                         fontSize = 50.sp,
-                                        color = Color.White,
+                                        color = Color.Black,
                                         fontWeight = FontWeight.Bold,
-                                        modifier = Modifier.padding(start = 40.dp, end = 20.dp)
+                                        modifier = Modifier.padding(start = 40.dp, end = 20.dp,top = 20.dp)
                                     )
                                     if (it.menuGubun == "0") {
                                         LazyColumn(
@@ -258,9 +268,9 @@ fun OptionDialog(
                                                             viewModel.countPopup()
                                                         },
                                                         colors = RadioButtonDefaults.colors(
-                                                            selectedColor = Color.White,
-                                                            disabledColor = Color.Black,
-                                                            unselectedColor = Color.White
+                                                            selectedColor = custom_green,
+                                                            disabledColor = Color.White,
+                                                            unselectedColor = Color.Black
                                                         ),
                                                         modifier = Modifier
                                                             .scale(1.6f)
@@ -269,16 +279,16 @@ fun OptionDialog(
                                                     Text(
                                                         text = requiredOpt.requiredOptList[0]!!.optMenuName,
                                                         fontSize = 45.sp,
-                                                        color = Color.White,
+                                                        color = Color.Black,
                                                         modifier = Modifier
                                                             .width(600.dp)
                                                             .basicMarquee()
-                                                            .padding(end = 16.dp)
+                                                            .padding(start = 10.dp, end = 16.dp)
                                                     )
                                                     Text(
                                                         text = "${getDecimalFormat(requiredOpt.requiredOptList[0]!!.optMenuPrice.toInt())} 원",
                                                         fontSize = 45.sp,
-                                                        color = Color.White,
+                                                        color = Color.Black,
                                                         modifier = Modifier
                                                             .weight(1f)
                                                             .wrapContentWidth(Alignment.End)
@@ -297,7 +307,11 @@ fun OptionDialog(
                                                 val isClicked = remember { mutableStateOf(item in addedSelectedTest) }
                                                 Row(
                                                     modifier = Modifier
-                                                        .padding(8.dp)
+                                                        .padding(
+                                                            start = 8.dp,
+                                                            end = 8.dp,
+                                                            top = 4.dp
+                                                        )
                                                         .height(100.dp)
                                                         .fillMaxWidth()
                                                         .clickable {
@@ -330,9 +344,9 @@ fun OptionDialog(
                                                             viewModel.countPopup()
                                                         },
                                                         colors = CheckboxDefaults.colors(
-                                                            checkmarkColor = Color.Black,
-                                                            checkedColor = Color.White,
-                                                            uncheckedColor = Color.White
+                                                            checkmarkColor = Color.White,
+                                                            checkedColor = custom_green,
+                                                            uncheckedColor = Color.Black
                                                         ),
                                                         modifier = Modifier
                                                             .scale(1.6f)
@@ -341,16 +355,16 @@ fun OptionDialog(
                                                     Text(
                                                         text = addedOpt.addOptList[0]?.optMenuName ?: "",
                                                         fontSize = 45.sp,
-                                                        color = Color.White,
+                                                        color = Color.Black,
                                                         modifier = Modifier
                                                             .width(600.dp)
                                                             .basicMarquee()
-                                                            .padding(end = 16.dp)
+                                                            .padding(start = 10.dp, end = 16.dp)
                                                     )
                                                     Text(
                                                         text = "${getDecimalFormat(addedOpt.addOptList[0]?.optMenuPrice?.toInt() ?: 0)} 원",
                                                         fontSize = 45.sp,
-                                                        color = Color.White,
+                                                        color = Color.Black,
                                                         modifier = Modifier
                                                             .weight(1f)
                                                             .wrapContentWidth(Alignment.End)
@@ -361,7 +375,7 @@ fun OptionDialog(
                                     }
                                 }
                             }
-                            Divider(color = Color.White, modifier = Modifier.padding(horizontal = 12.dp), thickness = 2.dp)
+                            Divider(color = Color.Black, modifier = Modifier.padding(horizontal = 12.dp), thickness = 2.dp)
                         }
                     }
                 }
@@ -378,7 +392,7 @@ fun OptionDialog(
                                 viewModel.countPopup()
                             }
                             .padding(start = 8.dp, top = 8.dp, bottom = 16.dp, end = 8.dp)
-                            .background(custom_red)
+                            .background(papa_red, RoundedCornerShape(10.dp))
                             .clip(RoundedCornerShape(10.dp))
                             .weight(1f)
                             .fillMaxSize(),
@@ -387,7 +401,7 @@ fun OptionDialog(
                         Text(
                             text = stringResource(id = R.string.str_cancel),
                             fontSize = 45.sp,
-                            color = Color.Black
+                            color = Color.White
                         )
                     }
                     Box(
@@ -406,7 +420,7 @@ fun OptionDialog(
                                 }
                             }
                             .padding(start = 8.dp, top = 8.dp, bottom = 16.dp, end = 8.dp)
-                            .background(custom_yellow)
+                            .background(custom_green, shape = RoundedCornerShape(10.dp))
                             .clip(RoundedCornerShape(10.dp))
                             .weight(1f)
                             .fillMaxSize(),
@@ -415,7 +429,7 @@ fun OptionDialog(
                         Text(
                             text = stringResource(id = R.string.str_confirm),
                             fontSize = 45.sp,
-                            color = Color.Black
+                            color = Color.White
                         )
                     }
                 }
@@ -431,14 +445,14 @@ fun ButtonActions(viewModel: MainMenuViewModel) {
         modifier = Modifier
             .fillMaxHeight()
             .fillMaxWidth()
-            .background(Color.Black)
+            .background(papa_darkgray)
     ) {
         Box(
             modifier = Modifier
                 .fillMaxHeight(0.75f)
                 .fillMaxWidth()
-                .background(color = Color.Black)
-                .padding(start = 4.dp)
+                .background(color = papa_darkgray)
+                .padding(start = 3.dp, 3.dp)
         ) {
             Column(
                 modifier = Modifier
@@ -451,7 +465,7 @@ fun ButtonActions(viewModel: MainMenuViewModel) {
             }
         }
         Divider(
-            color = Color.White, thickness = 2.dp
+            color = papa_darkgray, thickness = 2.dp
         )
         Spacer(modifier = Modifier.height(2.dp))
         CancelButton(viewModel)
@@ -464,15 +478,14 @@ fun CancelButton(viewModel: MainMenuViewModel) {
     val plusShow by viewModel.showPlusDlg.collectAsState()
     Box(
         modifier = Modifier
-            .padding(start = 4.dp)
-            .background(Color.Black)
+            .padding(start = 3.dp)
+            .background(papa_darkgray)
     ) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .fillMaxHeight()
-                .clip(RoundedCornerShape(16.dp))
-                .background(custom_red)
+                .background(papa_red)
                 .clickable {
                     if (showOption || plusShow) return@clickable
                     viewModel.clearAllOrders()
@@ -483,7 +496,7 @@ fun CancelButton(viewModel: MainMenuViewModel) {
             Text(
                 text = stringResource(id = R.string.str_order_cancellation),
                 fontSize = 40.sp,
-                color = Color.Black,
+                color = Color.White,
             )
         }
     }
@@ -493,23 +506,29 @@ fun CancelButton(viewModel: MainMenuViewModel) {
 fun PaymentButton(viewModel: MainMenuViewModel) {
     val showOption by viewModel.showOption.collectAsState()
     val plusShow by viewModel.showPlusDlg.collectAsState()
-    Box(
+    Row(
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight()
-            .clip(RoundedCornerShape(16.dp))
-            .background(custom_yellow)
+            .background(Color.White)
             .padding(horizontal = 16.dp, vertical = 8.dp)
             .clickable {
                 if (showOption || plusShow) return@clickable
                 viewModel.payment()
             },
-        contentAlignment = Alignment.Center
+        verticalAlignment = Alignment.CenterVertically
     ) {
+        Image(
+            painter = painterResource(id = R.drawable.new_card),
+            contentDescription = null,
+            modifier = Modifier
+                .size(150.dp)
+                .padding(start = 37.dp, end = 30.dp)
+        )
         Text(
             text = stringResource(id = R.string.str_payment_button),
-            fontSize = 70.sp,
-            color = Color.Black,
+            fontSize = 50.sp,
+            color = papa_black,
         )
     }
 }
@@ -522,8 +541,7 @@ fun PackageButton(viewModel: MainMenuViewModel) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .clip(RoundedCornerShape(16.dp))
-            .background(custom_yellow)
+            .background(Color.White),
     ) {
         Row(
             modifier = Modifier
@@ -542,18 +560,18 @@ fun PackageButton(viewModel: MainMenuViewModel) {
                     viewModel.setItemPackage(it)
                 },
                 colors = CheckboxDefaults.colors(
-                    checkmarkColor = Color.Black,
-                    checkedColor = Color.White,
-                    uncheckedColor = Color.Black
+                    checkmarkColor = Color.White,
+                    checkedColor = custom_green,
+                    uncheckedColor = papa_black
                 ),
                 modifier = Modifier
                     .scale(scale = 1.6f)
-                    .padding(end = 16.dp)
+                    .padding(start = 30.dp, end = 40.dp)
             )
             Text(
                 text = stringResource(id = R.string.str_packing_button),
-                fontSize = 50.sp,
-                color = Color.Black
+                fontSize = 40.sp,
+                color = papa_black
             )
         }
     }
@@ -567,12 +585,14 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
         modifier = Modifier
             .fillMaxWidth(0.7f)
             .fillMaxHeight()
+            .background(papa_darkgray)
+            .padding(top = 3.dp)
     ) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .fillMaxHeight()
-                .background(colorResource(id = R.color.grey))
+                .background(colorResource(id = R.color.white))
         ) {
             LazyColumn(
                 modifier = Modifier
@@ -586,13 +606,13 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
                         Row(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(bottom = 4.dp),
+                                .padding(bottom = 0.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Text(
                                 text = it[0].text,
                                 fontSize = 24.sp,
-                                color = Color.White,
+                                color = papa_black,
                                 modifier = Modifier
                                     .width(300.dp)
                                     .wrapContentWidth(Alignment.Start)
@@ -602,17 +622,20 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
                             Image(
                                 modifier = Modifier
                                     .clickable {
-                                        viewModel.removeOrders(it.last())
+                                        if(it.size > 1) {
+                                            viewModel.removeOrders(it.last())
+                                        }
+
                                     }
                                     .size(28.dp),
-                                painter = painterResource(id = R.drawable.bt_minus),
+                                painter = painterResource(id = R.drawable.re_bt_minus),
                                 contentDescription = null
                             )
                             Spacer(modifier = Modifier.width(40.dp))
                             Text(
                                 text = "${it.size}",
                                 fontSize = 24.sp,
-                                color = Color.White,
+                                color = papa_black,
                                 modifier = Modifier
                                     .width(36.dp)
                             )
@@ -623,13 +646,13 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
                                         viewModel.addOrders(it.first())
                                     }
                                     .size(28.dp),
-                                painter = painterResource(id = R.drawable.bt_plus),
+                                painter = painterResource(id = R.drawable.re_bt_plus),
                                 contentDescription = null
                             )
                             Text(
                                 text = "${getDecimalFormat((it.first().itemprice.toLong() + it.first().sumOfOptions()).toInt())}  원",
                                 fontSize = 24.sp,
-                                color = Color.White,
+                                color = papa_black,
                                 modifier = Modifier
                                     .weight(1f)
                                     .wrapContentWidth(Alignment.End)
@@ -641,7 +664,7 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
                                         viewModel.clearOrders(it)
                                     }
                                     .size(28.dp),
-                                painter = painterResource(id = R.drawable.bt_delete),
+                                painter = painterResource(id = R.drawable.re_bt_delete),
                                 contentDescription = null
                             )
                         }
@@ -650,23 +673,24 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
                         val separator = if (addOptions.isEmpty() || reqOptions.isEmpty()) "" else " | "
                         Row(
                             modifier = Modifier.fillMaxWidth()
+                                .padding(bottom = 3.dp)
                         ) {
                             Text(
                                 text = reqOptions.distinct().withSeparatorString(),
-                                fontSize = 20.sp,
-                                color = Color.White
+                                fontSize = 18.sp,
+                                color = papa_black
                             )
                             Text(
                                 text = "$separator${addOptions.distinct().withSeparatorString()}",
-                                fontSize = 20.sp,
-                                color = Color.LightGray
+                                fontSize = 18.sp,
+                                color = papa_lightgray
                             )
                         }
                     }
                 }
             }
             Divider(
-                color = Color.White, thickness = 2.dp
+                color = papa_darkgray, thickness = 3.dp
             )
             Row(
                 modifier = Modifier
@@ -678,23 +702,23 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
                 Text(
                     text = stringResource(id = R.string.str_total_orders),
                     fontSize = 35.sp,
-                    color = Color.White
+                    color = papa_black
                 )
                 Text(
                     text = selectedOrdersGroup.size.toString(),
                     fontSize = 35.sp,
-                    color = Color.White
+                    color = papa_black
                 )
                 Text(
                     text = stringResource(id = R.string.str_payment_money),
                     fontSize = 35.sp,
-                    color = Color.White,
+                    color = papa_black,
                     modifier = Modifier.padding(start = 44.dp)
                 )
                 Text(
                     text = "${getDecimalFormat(viewModel.totalPrice.value.toString().toInt())}  " + stringResource(id = R.string.str_won),
                     fontSize = 35.sp,
-                    color = Color.White,
+                    color = papa_black,
                     modifier = Modifier
                         .weight(1f)
                         .wrapContentWidth(Alignment.End)
@@ -709,17 +733,31 @@ fun OrderScreen(viewModel: MainMenuViewModel) {
 @Composable
 fun StoreName(vm: MainMenuViewModel) {
     val storeName by vm.storeName.observeAsState()
+    val options by vm.storeImage.observeAsState()
+    val imgPath = "/storage/emulated/0/BBMC/PAYCAST/Content/"
 
     Box(
         modifier = Modifier
-            .padding(8.dp)
+            .padding(top = 50.dp)
             .fillMaxWidth(),
         contentAlignment = Alignment.TopCenter
     ) {
+        val imgFile = imgPath + options
+        Image(
+            rememberAsyncImagePainter(
+                model = imgFile,
+            ),
+            contentDescription = null,
+            modifier = Modifier
+                .height(75.dp),
+            alignment = Alignment.Center,
+            contentScale = ContentScale.Crop,
+        )
+
         Text(
             text = storeName ?: "",
             fontSize = 90.sp,
-            color = Color.White,
+            color = Color.Black,
             fontWeight = FontWeight.Bold,
             modifier = Modifier
                 .basicMarquee()
@@ -737,7 +775,7 @@ fun StoreName(vm: MainMenuViewModel) {
                     )
                 }
                 .background(Color.Transparent)
-                .size(80.dp)
+                .size(100.dp)
                 .align(Alignment.TopEnd)
         )
     }
@@ -750,7 +788,6 @@ fun TabPager(vm: MainMenuViewModel) {
     val imgPath = "/storage/emulated/0/BBMC/PAYCAST/Content/"
     val pagerState = rememberPagerState()
     val coroutineScope = rememberCoroutineScope()
-    val shape = RoundedCornerShape(20)
     val showOption by vm.showOption.collectAsState()
     val plusShow by vm.showPlusDlg.collectAsState()
     Column(
@@ -758,51 +795,65 @@ fun TabPager(vm: MainMenuViewModel) {
             .fillMaxWidth()
             .fillMaxHeight(0.8f)
     ) {
-        ScrollableTabRow(
-            selectedTabIndex = pagerState.currentPage + 0,
-            indicator = { tabPositions ->
-                Box(
-                    modifier = Modifier
-                        .pagerTabIndicatorOffset(pagerState, tabPositions)
-                        .height(40.dp)
-                        .background(Color.Transparent)
-                )
-            },
-            backgroundColor = Color.Transparent,
-            modifier = Modifier
-                .clip(shape = shape)
-                .padding(bottom = 16.dp)
-        ) {
-            menuDatas.forEachIndexed { index, title ->
-                //tab indicator 사용하지 않고 선택된 text 의 배경색을 바꾸는 방법을 사용,
-                // selected 때문에 오류가 뜬다면 기존 방식으로 전환할 것
-                val selected = index == pagerState.currentPage
-                val color = if (selected) custom_yellow else Color.Transparent
-                val txtColor = if (selected) Color.Black else Color.White
-                Tab(
-                    text = {
-                        Text(
-                            text = title.name ?: "TEST",
-                            fontSize = 40.sp,
-                            color = txtColor,
+        Logger.w("menuDatas : $menuDatas")
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(90.dp)
+                    .background(papa_darkdarkgray),
+                contentAlignment = Alignment.CenterStart
+            ) {
+
+                ScrollableTabRow(
+                    selectedTabIndex = pagerState.currentPage + 0,
+                    indicator = { tabPositions ->
+                        Box(
+                            modifier = Modifier
+                                .pagerTabIndicatorOffset(pagerState, tabPositions)
+                                .height(40.dp)
+                                .background(Color.Transparent)
+                                .padding(bottom = 20.dp)
                         )
                     },
-                    selected = pagerState.currentPage == index,
-                    onClick = {
-                        Logger.w("Page move : $index")
-                        if(showOption || plusShow) return@Tab
-                        coroutineScope.launch {
-                            pagerState.scrollToPage(index)
-                            vm.countPopup()
-                        }
-                    },
+                    backgroundColor = Color.White,
                     modifier = Modifier
-                        //border(width = 2.dp, color = color, shape = RoundedCornerShape( 20))
-                        .background(color, shape = RoundedCornerShape(20))
-                        .padding(horizontal = 8.dp, vertical = 4.dp)
-                )
+                        .padding(bottom = 2.dp)
+                        .height(92.dp)
+                    ,
+                ) {
+                    menuDatas.forEachIndexed { index, title ->
+                        //tab indicator 사용하지 않고 선택된 text 의 배경색을 바꾸는 방법을 사용,
+                        // selected 때문에 오류가 뜬다면 기존 방식으로 전환할 것
+                        val selected = index == pagerState.currentPage
+                        val color = if (selected) custom_green else Color.White
+                        val txtColor = if (selected) Color.White else Color.Black
+                        Tab(
+                            text = {
+                                Text(
+                                    text = title.name ?: "TEST",
+                                    fontSize = 40.sp,
+                                    color = txtColor,
+                                )
+                            },
+                            selected = pagerState.currentPage == index,
+                            onClick = {
+                                Logger.w("Page move : $index")
+                                if(showOption || plusShow) return@Tab
+                                coroutineScope.launch {
+                                    pagerState.scrollToPage(index)
+                                    vm.countPopup()
+                                }
+                            },
+                            modifier = Modifier
+                                //border(width = 2.dp, color = color, shape = RoundedCornerShape( 20))
+                                .background(color, shape = RoundedCornerShape(20))
+                                .padding(horizontal = 22.dp, vertical = 4.dp)
+                        )
+
+                    }
+                }
             }
-        }
+
         HorizontalPager(
             count = menuDatas.size,
             state = pagerState,
@@ -821,9 +872,9 @@ fun TabPager(vm: MainMenuViewModel) {
                     Column(
                         modifier = Modifier
                             .border(
-                                width = 4.dp,
-                                color = Color.White,
-                                shape = MaterialTheme.shapes.small
+                                width = (1.5).dp,
+                                color = papa_gray,
+                                shape = MaterialTheme.shapes.small,
                             )
                             .height(350.dp)
                             .clickable {
@@ -867,7 +918,7 @@ fun TabPager(vm: MainMenuViewModel) {
                                     painter = painterResource(id = R.drawable.default_menu_icon),
                                     contentDescription = "",
                                     modifier = Modifier
-                                        .height(200.dp),
+                                        .height(230.dp),
                                     contentScale = ContentScale.Fit,
                                 )
                             } else {
@@ -885,13 +936,13 @@ fun TabPager(vm: MainMenuViewModel) {
                         }
                         Column(
                             modifier = Modifier
-                                .padding(bottom = 4.dp, top = 16.dp),
+                                .padding(bottom = 4.dp, top = 20.dp),
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Text(
                                 text = item.name + "(${item.code})",
                                 fontSize = 28.sp,
-                                color = Color.White,
+                                color = Color.Black,
                                 modifier = Modifier
                                     .basicMarquee()
                                     .padding(top = 8.dp, bottom = 4.dp),
@@ -900,7 +951,7 @@ fun TabPager(vm: MainMenuViewModel) {
                             Text(
                                 text = item.groupName ?: "일반상품",
                                 fontSize = 18.sp,
-                                color = colorResource(id = R.color.Orange),
+                                color = colorResource(id = R.color.black),
                                 modifier = Modifier
                                     .basicMarquee()
                                     .padding(top = 0.dp, bottom = 0.dp),
@@ -909,20 +960,20 @@ fun TabPager(vm: MainMenuViewModel) {
                             val styledText = buildAnnotatedString {
                                 var itemPrice = item.price.toFloat()
                                 if(item.discount < 1F) {
-                                    withStyle(style = SpanStyle(color = Color.White, fontSize = 18.sp, textDecoration = LineThrough)) {
+                                    withStyle(style = SpanStyle(color = Color.Black, fontSize = 18.sp, textDecoration = LineThrough)) {
                                         append(getDecimalFormat(item.price.toInt()))
                                     }
                                     itemPrice *= (1 - item.discount)
                                     append("  ")
                                 }
-                                withStyle(style = SpanStyle(fontWeight = FontWeight.Bold, fontSize = 28.sp, color = colorResource(id = R.color.Orange))) {
+                                withStyle(style = SpanStyle(fontWeight = FontWeight.Bold, fontSize = 28.sp, color = colorResource(id = R.color.black))) {
                                     append(getDecimalFormat(itemPrice.toInt()) + " 원")
                                 }
                             }
 
                             Text(
                                 modifier = Modifier
-                                    .padding(6.dp)
+                                    .padding(6.dp, bottom = 6.dp)
                                     .wrapContentHeight(align = Alignment.CenterVertically),
                                 text = styledText,
                                 textAlign = TextAlign.Center,
@@ -940,7 +991,9 @@ fun TabPager(vm: MainMenuViewModel) {
                         }
                     }
                     Box(modifier = Modifier
-                        .padding(start = 6.dp, top = 6.dp)) {
+                        .wrapContentWidth(Alignment.End)
+                        .padding(top = 5.dp, end = 5.dp)
+                    ) {
                         BadgeImage(item)
                     }
                     if (item.soldout == "true") {
@@ -953,6 +1006,7 @@ fun TabPager(vm: MainMenuViewModel) {
                 }
             }
         }
+
     }
 }
 
@@ -960,10 +1014,10 @@ fun TabPager(vm: MainMenuViewModel) {
 fun BadgeImage(item: MenuObject) {
 //    Logger.i("Discount : ${item.name to item.discount}")
     val badgeSrc = when {
-        item.newmenu == "true" -> painterResource(id = R.drawable.badge_new)
-        item.popular == "true" -> painterResource(id = R.drawable.badge_hot)
-        item.refill == "infinity" -> painterResource(id = R.drawable.ic_refill_ball)
-        item.discount < 1f -> painterResource(id = R.drawable.badge_sale)
+        item.newmenu == "true" -> painterResource(id = R.drawable.neww)
+        item.popular == "true" -> painterResource(id = R.drawable.new_best_icon)
+        item.refill == "infinity" -> painterResource(id = R.drawable.new_sale_icon)
+        item.discount < 1f -> painterResource(id = R.drawable.new_sale_icon)
         else -> null
     }
     badgeSrc?.let {
@@ -971,7 +1025,7 @@ fun BadgeImage(item: MenuObject) {
             painter = it,
             contentDescription = "",
             modifier = Modifier
-                .height(50.dp),
+                .height(55.dp),
             contentScale = ContentScale.Fit,
         )
     }
@@ -1021,29 +1075,31 @@ fun PlusMenuDialog(
         val imageSrc = imgPath + item.imagefile
         Box(modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black.copy(alpha = 0.7f))) {
+            .background(Color.Transparent)) {
             Box(
                 modifier = Modifier
-                    .padding(140.dp)
-                    .background(Color.White)
+                    .padding(40.dp)
+                    .background(Color.Transparent)
                     .fillMaxSize()
             ) {
                 Column(
                     modifier = Modifier
                         .padding(20.dp)
-                        .background(Color.Black)
+                        .background(Color.White, RoundedCornerShape(10.dp))
+                        .border(2.dp, papa_darkgray, RoundedCornerShape(10.dp))
                         .fillMaxSize()
                 ) {
                     Column(
                         modifier = Modifier
                             .fillMaxWidth()
                             .fillMaxHeight(0.9f)
+                            .padding(70.dp) //12였음
 //                        .verticalScroll(scrollState)
                     ) {
                         Text(
                             text = "해당 상품은 ${item.groupName} 상품 입니다.",
-                            fontSize = 43.sp,
-                            color = Color.White,
+                            fontSize = 38.sp,
+                            color = Color.Black,
                             modifier = Modifier
                                 .padding(12.dp)
                                 .fillMaxWidth(),
@@ -1052,7 +1108,7 @@ fun PlusMenuDialog(
                         Text(
                             text = item.name,
                             fontSize = 45.sp,
-                            color = colorResource(id = R.color.Orange),
+                            color = papa_red,
                             modifier = Modifier
                                 .padding(24.dp)
                                 .fillMaxWidth(),
@@ -1066,7 +1122,7 @@ fun PlusMenuDialog(
                             modifier = Modifier
                                 .padding(12.dp)
                                 .padding(horizontal = 80.dp)
-                                .height(300.dp)
+                                .height(400.dp)
                                 .fillMaxWidth(),
                             alignment = Alignment.Center,
                             contentScale = ContentScale.Crop
@@ -1074,7 +1130,7 @@ fun PlusMenuDialog(
                         Text(
                             text = "아래 메뉴중에서 상품을 골라주세요.",
                             fontSize = 40.sp,
-                            color = Color.White,
+                            color = Color.Black,
                             modifier = Modifier
                                 .padding(24.dp)
                                 .fillMaxWidth(),
@@ -1083,7 +1139,7 @@ fun PlusMenuDialog(
                         Text(
                             text = selectedItem.name.ifEmpty { "선택된 상품이 없습니다." },
                             fontSize = 45.sp,
-                            color = Color.White,
+                            color = Color.Black,
                             modifier = Modifier
                                 .padding(24.dp)
                                 .fillMaxWidth(),
@@ -1094,7 +1150,7 @@ fun PlusMenuDialog(
                             Text(
                                 text = "옵션 : $count 개",
                                 fontSize = 25.sp,
-                                color = Color.White,
+                                color = Color.Black,
                                 modifier = Modifier
                                     .padding(24.dp)
                                     .fillMaxWidth(),
@@ -1116,8 +1172,7 @@ fun PlusMenuDialog(
                                     vm.clearMenuData()
                                 }
                                 .padding(start = 8.dp, top = 8.dp, bottom = 16.dp, end = 8.dp)
-                                .background(custom_red)
-                                .clip(RoundedCornerShape(10.dp))
+                                .background(papa_red, RoundedCornerShape(10.dp))
                                 .weight(1f)
                                 .fillMaxSize(),
                             contentAlignment = Alignment.Center
@@ -1125,14 +1180,14 @@ fun PlusMenuDialog(
                             Text(
                                 text = stringResource(id = R.string.str_cancel),
                                 fontSize = 45.sp,
-                                color = Color.Black
+                                color = Color.White
                             )
                         }
                         Box(
                             modifier = Modifier
                                 .clickable {
                                     Logger.w("Click OK")
-                                    if(vm.checkValidPlusSelectedItem()) {
+                                    if (vm.checkValidPlusSelectedItem()) {
                                         vm.sendToast("행사상품을 골라주세요")
                                     } else {
                                         vm.showPlusDlg(false)
@@ -1140,8 +1195,7 @@ fun PlusMenuDialog(
                                     }
                                 }
                                 .padding(start = 8.dp, top = 8.dp, bottom = 16.dp, end = 8.dp)
-                                .background(custom_yellow)
-                                .clip(RoundedCornerShape(10.dp))
+                                .background(custom_green, RoundedCornerShape(10.dp))
                                 .weight(1f)
                                 .fillMaxSize(),
                             contentAlignment = Alignment.Center
@@ -1149,7 +1203,7 @@ fun PlusMenuDialog(
                             Text(
                                 text = stringResource(id = R.string.str_confirm),
                                 fontSize = 45.sp,
-                                color = Color.Black
+                                color = Color.White
                             )
                         }
                     }
@@ -1177,12 +1231,17 @@ fun LazyVerticalGridDemo(list: List<MenuObject>, vm: MainMenuViewModel) {
         content = {
             items(list.size) { index ->
                 Card(
-                    backgroundColor = Color.Red,
+                    backgroundColor = Color.White,
                     modifier = Modifier
                         .padding(4.dp)
                         .height(300.dp)
+                        .border(
+                            color = papa_darkgray2,
+                            width = 2.dp,
+                            shape = RoundedCornerShape(10.dp)
+                        )
                         .fillMaxWidth(),
-                    elevation = 8.dp,
+                    elevation = 0.dp,
                     onClick = {
                         val item = list[index]
                         if (item.optMenusList.isNotEmpty()) {
@@ -1208,7 +1267,7 @@ fun LazyVerticalGridDemo(list: List<MenuObject>, vm: MainMenuViewModel) {
                             text = list[index].name,
                             fontWeight = FontWeight.Bold,
                             fontSize = 20.sp,
-                            color = Color(0xFFFFFFFF),
+                            color = Color.Black,
                             textAlign = TextAlign.Center,
                             modifier = Modifier
                                 .padding(10.dp)
@@ -1218,7 +1277,7 @@ fun LazyVerticalGridDemo(list: List<MenuObject>, vm: MainMenuViewModel) {
                             text = getDecimalFormat(list[index].price.toInt()) + " 원",
                             fontWeight = FontWeight.Bold,
                             fontSize = 18.sp,
-                            color = colorResource(id = R.color.Orange),
+                            color = Color.Black,
                             textAlign = TextAlign.End,
                             modifier = Modifier
                                 .padding(0.dp, 0.dp, 10.dp, 0.dp)
@@ -1262,14 +1321,15 @@ fun PlusOptionDialog(
     Box(
         modifier = Modifier
             .padding(40.dp)
-            .background(Color.White)
-            .fillMaxSize(0.7f)
+            .background(Color.Transparent)
+            .fillMaxSize()
             .clickable { }
     ) {
         Column(
             modifier = Modifier
                 .padding(20.dp)
-                .background(Color.Black)
+                .background(Color.White, shape = RoundedCornerShape(10.dp))
+                .border(2.dp, papa_darkgray, RoundedCornerShape(10.dp))
                 .fillMaxSize()
         ) {
             Column(
@@ -1279,10 +1339,10 @@ fun PlusOptionDialog(
             ) {
                 Text(
                     text = item?.name.toString(),
-                    fontSize = 50.sp,
-                    color = Color.White,
+                    fontSize = 65.sp,
+                    color = Color.Black,
                     modifier = Modifier
-                        .padding(12.dp)
+                        .padding(start = 12.dp, end = 12.dp, top = 40.dp)
                         .fillMaxWidth(),
                     textAlign = TextAlign.Center
                 )
@@ -1294,28 +1354,28 @@ fun PlusOptionDialog(
                     ),
                     contentDescription = null,
                     modifier = Modifier
-                        .padding(12.dp)
+                        .padding(start = 12.dp, end = 12.dp, top = 30.dp)
                         .padding(horizontal = 80.dp)
-                        .height(350.dp)
+                        .height(400.dp)
                         .fillMaxWidth(),
                     alignment = Alignment.Center,
                     contentScale = ContentScale.Crop,
                 )
-                if(item.description.isNotBlank()) {
-                    Text(
-                        text = item.description,
-                        fontSize = 35.sp,
-                        color = Color.White,
-                        modifier = Modifier
-                            .padding(24.dp)
-                            .fillMaxWidth()
-                    )
-                }
+                //         if(item.description.isNotBlank()) {
+                Text(
+                    text = item.description,
+                    fontSize = 45.sp,
+                    color = Color.Black,
+                    modifier = Modifier
+                        .padding(start = 24.dp, end = 24.dp, top = 5.dp)
+                        .fillMaxWidth()
+                )
+                //          }
                 val price = item.price
                 Text(
                     text = "${getDecimalFormat(price.toInt())} 원",
-                    fontSize = 35.sp,
-                    color = Color.White,
+                    fontSize = 55.sp,
+                    color = Color.Black,
                     modifier = Modifier
                         .padding(24.dp)
                         .fillMaxWidth(),
@@ -1336,27 +1396,32 @@ fun PlusOptionDialog(
                             ) {
                                 Text(
                                     text = it.menuOptName,
-                                    fontSize = 40.sp,
-                                    color = Color.White,
+                                    fontSize = 50.sp,
+                                    color = Color.Black,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(start = 40.dp, end = 20.dp)
                                 )
                                 if (it.menuGubun == "0") {
                                     LazyColumn(
                                         modifier = Modifier
-                                            .height(350.dp)
+                                            .height(500.dp)
                                             .fillMaxWidth()
                                     ) {
                                         itemsIndexed(it.optList) { _, requiredOpt ->
                                             Row(
                                                 modifier = Modifier
                                                     .padding(8.dp)
-                                                    .height(60.dp)
+                                                    .height(100.dp)
                                                     .fillMaxWidth()
                                                     .clickable {
-                                                        radioValuesV2[i] = requiredOpt.requiredOptList[0]!!.optMenuName
-                                                        radioSelectedList.value = radioValuesV2.toList()
-                                                        viewModel.setPlusRequiredOptions(requiredOpt.requiredOptList[0]!!, i)
+                                                        radioValuesV2[i] =
+                                                            requiredOpt.requiredOptList[0]!!.optMenuName
+                                                        radioSelectedList.value =
+                                                            radioValuesV2.toList()
+                                                        viewModel.setPlusRequiredOptions(
+                                                            requiredOpt.requiredOptList[0]!!,
+                                                            i
+                                                        )
                                                         viewModel.countPopup()
                                                     },
                                                 verticalAlignment = Alignment.CenterVertically
@@ -1370,27 +1435,27 @@ fun PlusOptionDialog(
                                                         viewModel.countPopup()
                                                     },
                                                     colors = RadioButtonDefaults.colors(
-                                                        selectedColor = Color.White,
+                                                        selectedColor = custom_green,
                                                         disabledColor = Color.Black,
-                                                        unselectedColor = Color.White
+                                                        unselectedColor = Color.Black
                                                     ),
                                                     modifier = Modifier
                                                         .scale(1.6f)
-                                                        .width(40.dp)
+                                                        .width(60.dp)
                                                 )
                                                 Text(
                                                     text = requiredOpt.requiredOptList[0]!!.optMenuName,
-                                                    fontSize = 30.sp,
-                                                    color = Color.White,
+                                                    fontSize = 45.sp,
+                                                    color = Color.Black,
                                                     modifier = Modifier
                                                         .wrapContentWidth()
                                                         .basicMarquee()
-                                                        .padding(end = 16.dp)
+                                                        .padding(start = 10.dp, end = 16.dp)
                                                 )
                                                 Text(
                                                     text = "${getDecimalFormat(requiredOpt.requiredOptList[0]!!.optMenuPrice.toInt())} 원",
-                                                    fontSize = 30.sp,
-                                                    color = Color.White,
+                                                    fontSize = 45.sp,
+                                                    color = Color.Black,
                                                     modifier = Modifier
                                                         .weight(1f)
                                                         .wrapContentWidth(Alignment.End)
@@ -1401,7 +1466,7 @@ fun PlusOptionDialog(
                                 } else if (it.menuGubun == "1") {
                                     LazyColumn(
                                         modifier = Modifier
-                                            .height(350.dp)
+                                            .height(500.dp)
                                             .fillMaxWidth()
                                     ) {
                                         items(it.optList) { addedOpt ->
@@ -1411,7 +1476,7 @@ fun PlusOptionDialog(
                                             Row(
                                                 modifier = Modifier
                                                     .padding(8.dp)
-                                                    .height(60.dp)
+                                                    .height(100.dp)
                                                     .fillMaxWidth()
                                                     .clickable {
                                                         isClicked.value = !isClicked.value
@@ -1420,7 +1485,9 @@ fun PlusOptionDialog(
                                                             viewModel.tempPlusAddOptions(addedOpt.addOptList[0]!!)
                                                         } else {
                                                             addedSelected.remove(optItem)
-                                                            viewModel.tempRemovePlusAddOptions(addedOpt.addOptList[0]!!)
+                                                            viewModel.tempRemovePlusAddOptions(
+                                                                addedOpt.addOptList[0]!!
+                                                            )
                                                         }
                                                         viewModel.countPopup()
                                                     },
@@ -1440,28 +1507,28 @@ fun PlusOptionDialog(
                                                         viewModel.countPopup()
                                                     },
                                                     colors = CheckboxDefaults.colors(
-                                                        checkmarkColor = Color.Black,
-                                                        checkedColor = Color.White,
-                                                        uncheckedColor = Color.White
+                                                        checkmarkColor = Color.White,
+                                                        checkedColor = custom_green,
+                                                        uncheckedColor = Color.Black
                                                     ),
                                                     modifier = Modifier
                                                         .scale(1.6f)
-                                                        .width(40.dp)
+                                                        .width(60.dp)
                                                 )
                                                 Text(
                                                     text = addedOpt.addOptList[0]?.optMenuName
                                                         ?: "",
-                                                    fontSize = 30.sp,
-                                                    color = Color.White,
+                                                    fontSize = 45.sp,
+                                                    color = Color.Black,
                                                     modifier = Modifier
                                                         .wrapContentWidth()
                                                         .basicMarquee()
-                                                        .padding(end = 16.dp)
+                                                        .padding(start = 10.dp, end = 16.dp)
                                                 )
                                                 Text(
                                                     text = "${getDecimalFormat(addedOpt.addOptList[0]?.optMenuPrice?.toInt() ?: 0)} 원",
-                                                    fontSize = 30.sp,
-                                                    color = Color.White,
+                                                    fontSize = 45.sp,
+                                                    color = Color.Black,
                                                     modifier = Modifier
                                                         .weight(1f)
                                                         .wrapContentWidth(Alignment.End)
@@ -1494,8 +1561,7 @@ fun PlusOptionDialog(
                             viewModel.countPopup()
                         }
                         .padding(start = 8.dp, top = 8.dp, bottom = 16.dp, end = 8.dp)
-                        .background(custom_red)
-                        .clip(RoundedCornerShape(10.dp))
+                        .background(papa_red, RoundedCornerShape(10.dp))
                         .weight(1f)
                         .fillMaxSize(),
                     contentAlignment = Alignment.Center
@@ -1503,7 +1569,7 @@ fun PlusOptionDialog(
                     Text(
                         text = stringResource(id = R.string.str_cancel),
                         fontSize = 45.sp,
-                        color = Color.Black
+                        color = Color.White
                     )
                 }
                 Box(
@@ -1522,8 +1588,7 @@ fun PlusOptionDialog(
                             }
                         }
                         .padding(start = 8.dp, top = 8.dp, bottom = 16.dp, end = 8.dp)
-                        .background(custom_yellow)
-                        .clip(RoundedCornerShape(10.dp))
+                        .background(custom_green, RoundedCornerShape(10.dp))
                         .weight(1f)
                         .fillMaxSize(),
                     contentAlignment = Alignment.Center
@@ -1531,7 +1596,7 @@ fun PlusOptionDialog(
                     Text(
                         text = stringResource(id = R.string.str_confirm),
                         fontSize = 45.sp,
-                        color = Color.Black
+                        color = Color.White
                     )
                 }
             }

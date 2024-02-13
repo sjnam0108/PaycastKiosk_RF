@@ -28,6 +28,14 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/btn_speed_dn.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_re_icon_card.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/re_icon_card.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_ca_con.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/ca_con.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout00.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/cardout00.png"
     },
@@ -46,6 +54,10 @@
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_loading16.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/loading16.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_new_new_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/new_new_icon.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_baseline_lock_open_24.xml.flat",
@@ -88,6 +100,14 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_re_card.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/re_card.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_re_bt_minus.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/re_bt_minus.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/layout_info_providing_agreement_dialog_layout.xml.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/layout/info_providing_agreement_dialog_layout.xml"
     },
@@ -98,6 +118,14 @@
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_best_icon_1.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/best_icon_1.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_new_best_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/new_best_icon.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_paper05.png.flat",
@@ -184,6 +212,10 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/card15.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_new_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/new_icon.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout21.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/cardout21.png"
     },
@@ -200,6 +232,10 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/loading18.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_best_icon_2.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/best_icon_2.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/layout_custom_new_lock_dialog.xml.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/layout/custom_new_lock_dialog.xml"
     },
@@ -208,12 +244,16 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/badge_hot.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout13.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/cardout13.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_paper23.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/paper23.png"
     },
     {
-        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout13.png.flat",
-        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/cardout13.png"
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_c_new.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/c_new.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_loading03.png.flat",
@@ -252,6 +292,10 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/card12.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_neww.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/neww.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_ic_launcher_background.xml.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/ic_launcher_background.xml"
     },
@@ -270,6 +314,10 @@
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout16.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/cardout16.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_re_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/re_icon.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_card01.png.flat",
@@ -356,6 +404,10 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/animator/slide_out_left.xml"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_new_sale_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/new_sale_icon.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_loading05.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/loading05.png"
     },
@@ -404,8 +456,16 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/paper03.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_sale_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/sale_icon.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_loading12.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/loading12.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_new_new_new.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/new_new_new.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout03.png.flat",
@@ -436,6 +496,10 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/paper18.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_v_card.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/v_card.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_bt_minus.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/bt_minus.png"
     },
@@ -458,6 +522,10 @@
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_paper02.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/paper02.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_re_bt_delete.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/re_bt_delete.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -512,6 +580,10 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/card00.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/icon.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_paper04.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/paper04.png"
     },
@@ -546,6 +618,14 @@
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_card19.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/card19.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_ca_icon.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/ca_icon.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_newww.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/newww.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout05.png.flat",
@@ -584,6 +664,10 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/card03.png"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_new_new.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/new_new.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_cardout22.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/cardout22.png"
     },
@@ -596,12 +680,20 @@
         "source": "kr.co.bbmc.paycast.app-main-81:/layout/setting_layout.xml"
     },
     {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_new_card.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/new_card.png"
+    },
+    {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/xml_config.xml.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/xml/config.xml"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_bt_back_page.png.flat",
         "source": "kr.co.bbmc.paycast.app-main-81:/drawable/bt_back_page.png"
+    },
+    {
+        "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_re_bt_plus.png.flat",
+        "source": "kr.co.bbmc.paycast.app-main-81:/drawable/re_bt_plus.png"
     },
     {
         "merged": "kr.co.bbmc.paycast.app-merged_res-79:/drawable_card10.png.flat",

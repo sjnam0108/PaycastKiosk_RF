@@ -374,6 +374,11 @@ class MainMenuViewModel : BaseViewModel() {
     val storeName = _storeName
     fun setStoreName(name: String) = _storeName.postValue(name)
 
+    // 상점이미지
+    private val _storeImage = MutableLiveData<String>()
+    val storeImage = _storeImage
+    fun setStoreImage(image: String) = _storeImage.postValue(image)
+
     // 결제 화면 정보 : LaunchType(val type: Int) { Payment(0), Provision(1), Refill(2) }
     private val _startActivity = MutableLiveData<Int>()
     val startActivity = _startActivity

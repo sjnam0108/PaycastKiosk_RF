@@ -24,6 +24,7 @@
     //title bar
 
     <color name="grey">#515151</color>
+    <color name="green">#077955</color>
 
     //custom buttom color
 </resources>

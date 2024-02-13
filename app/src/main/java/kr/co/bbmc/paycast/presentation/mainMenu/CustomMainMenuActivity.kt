@@ -117,7 +117,7 @@ class CustomMainMenuActivity : AppCompatActivity() {
                 AdNetTheme {
                     Surface {
                         Modifier.padding(vertical = 20.dp)
-                        MainMenuScreen(mainMenuViewModel)
+                         MainMenuScreen(mainMenuViewModel)
                     }
                 }
             }
@@ -154,6 +154,7 @@ class CustomMainMenuActivity : AppCompatActivity() {
                 .onErrorComplete()
                 .subscribe({ menuData ->
                     mainMenuViewModel.setStoreName(menuData.storename)
+                    mainMenuViewModel.setStoreImage(menuData.storeImage)
                     mainMenuViewModel.setMenus(menuData.catagoryObjectList)
                     delayRun({ mainMenuViewModel.setInit(true) }, 1000L)
                 }, { it.printStackTrace() })

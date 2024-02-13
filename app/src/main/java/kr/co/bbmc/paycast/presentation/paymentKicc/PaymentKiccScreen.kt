@@ -14,6 +14,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Color.Companion.Black
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -32,6 +33,9 @@ import kr.co.bbmc.paycast.approveMoney
 import kr.co.bbmc.paycast.mNumberOfOrder
 import kr.co.bbmc.paycast.presentation.dialog.model.DlgInfo
 import kr.co.bbmc.paycast.ui.component.CustomDialog
+import kr.co.bbmc.paycast.ui.component.papa_darkgray
+import kr.co.bbmc.paycast.ui.component.papa_darkgray2
+import kr.co.bbmc.paycast.ui.component.papa_red
 import kr.co.bbmc.paycast.util.getDecimalFormat
 import kr.co.bbmc.paycast.waitOrderCount
 
@@ -57,7 +61,7 @@ fun PaymentKiccScreen(vm: PaymentViewModel) {
     } else {
         Box(
             modifier = Modifier
-                .background(Color.Black),
+                .background(Color.White),
             contentAlignment = Alignment.TopCenter
         ) {
             Column(
@@ -70,7 +74,7 @@ fun PaymentKiccScreen(vm: PaymentViewModel) {
                     else -> R.string.msg_card_payment
                 }
                 Image(
-                    painter = painterResource(id = R.drawable.icon_card),
+                    painter = painterResource(id = R.drawable.re_icon_card),
                     contentDescription = null,
                     modifier = Modifier
                         .size(300.dp)
@@ -78,7 +82,7 @@ fun PaymentKiccScreen(vm: PaymentViewModel) {
                 Text(
                     text = stringResource(id = txtTitleResId),
                     fontSize = 45.sp,
-                    color = White
+                    color = Black
                 )
                 Spacer(modifier = Modifier.height(60.dp))
                 PaymentHeader(state)
@@ -127,7 +131,7 @@ fun KiccAnimation(state: Int) {
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxSize()
-            .background(Color.Black),
+            .background(Color.White),
         contentAlignment = Alignment.TopCenter
     ) {
         Image(
@@ -157,19 +161,19 @@ fun KiccAnimation(state: Int) {
 fun PaymentHeader(state: Int) {
     if (state != 2) {
         val styledText = buildAnnotatedString {
-            withStyle(style = SpanStyle(color = White, fontSize = 50.sp)) {
+            withStyle(style = SpanStyle(color = Black, fontSize = 45.sp)) {
                 append("결제금액은 ")
             }
-            withStyle(style = SpanStyle(fontWeight = FontWeight.Bold, fontSize = 52.sp, color = colorResource(id = R.color.Orange))) {
+            withStyle(style = SpanStyle(fontWeight = FontWeight.Bold, fontSize = 52.sp, color = papa_red)) {
                 append(getDecimalFormat(approveMoney.toInt()))
             }
-            withStyle(style = SpanStyle(color = White, fontSize = 50.sp)) {
+            withStyle(style = SpanStyle(color = Black, fontSize = 45.sp)) {
                 append("원 입니다.")
             }
         }
         Text(
-            modifier = Modifier.border(width = 2.dp, color = White, shape = RoundedCornerShape(20))
-                .height(100.dp)
+            modifier = Modifier.border(width = (3.5).dp, color = papa_darkgray2, shape = RoundedCornerShape(20))
+                .height(130.dp)
                 .fillMaxWidth()
                 .wrapContentHeight(align = Alignment.CenterVertically),
             text = styledText,
@@ -193,7 +197,7 @@ fun PaymentHeader(state: Int) {
         Text(
             text = stringResource(id = R.string.msg_card_insert),
             fontSize = 40.sp,
-            color = colorResource(id = R.color.Orange)
+            color = colorResource(id = R.color.black)
         )
     } else {
         Text(
